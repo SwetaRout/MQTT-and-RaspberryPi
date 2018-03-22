@@ -1,0 +1,3 @@
+Subscribe Messages
+1)mosquitto_sub -h 74.134.20.230 -p 1883 -v -t # -q 2| xargs -d '\n' -L1 bash -c 'date "+%Y-%m-%d %T.%3N $0"' >log_broker.txt
+2)mosquitto_sub -h 74.134.20.230 -p 1883 -v -t LightStatus -q 2| xargs -d '\n' -L1 bash -c 'date "+%Y-%m-%d %T.%3N $0"' >log_light_stautus.txt
